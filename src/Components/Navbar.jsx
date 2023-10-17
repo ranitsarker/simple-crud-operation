@@ -6,8 +6,6 @@ const Navbar = () => {
         <Link to="/" className="text-white text-2xl font-bold">Home</Link>
         <ul className="flex space-x-4">
           <li><Link to="/users" className="text-white hover:text-blue-300">Users</Link></li>
-          <li><Link to="/coffee" className="text-white hover:text-blue-300">All Coffee</Link></li>
-          <li><Link to="/addcoffee" className="text-white hover:text-blue-300">Add Coffee</Link></li>
         </ul>
       </div>
     </nav>

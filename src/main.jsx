@@ -8,8 +8,6 @@ import {
 import Home from './Components/Home';
 import Users from './Components/Users';
 import Update from './Components/Update';
-import AddCoffee from './Components/AddCoffee';
-import Coffees from './Components/Coffees';
 
 const router = createBrowserRouter([
   {
@@ -17,18 +15,9 @@ const router = createBrowserRouter([
     element: <Home></Home>,
   },
   {
-    path: "/addcoffee",
-    element: <AddCoffee></AddCoffee>,
-  },
-  {
     path: "/users",
     element: <Users></Users>,
     loader: () => fetch('http://localhost:5000/users'),
-  },
-  {
-    path: "/coffee",
-    element: <Coffees></Coffees>,
-    loader: () => fetch('http://localhost:5000/coffee'),
   },
   {
   path: "/update/:id",
